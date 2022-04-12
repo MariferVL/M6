@@ -1,21 +1,22 @@
 {% extends 'bp/base.html'%}
 
 {% block content %}
-    {% for post in posts %} 
+    {% for post in posts %}
     <div class="container bg-faded">
         <div class="row">
             <div class="col-4 mx-auto">
-                <div class="card card-body mb-2">
-                    <p class="post-date"><time> published: {{post.published_date}}</time></p>
-                    <p class="post-title" id="living">
-                        <a href="{% url 'post_detail' pk=post.pk %}"> {{ post.title}}</a></p>
-                    <div class="box1"><p class= "post" class= "post-text" > {{post.text|linebreaksbr}}</p></div>
+                <div class="card card-body mb-2" >
+                        <p class="postdate"><time> publicado: {{post.published_date}}</time></p>
+                        <p class="posttitle" >
+                            <a href="{% url 'post_detail' pk=post.pk %}"> {{ post.title}}</a></p>
+                        <div class="box1"><p id= "posttext"> {{post.text|linebreaksbr}}</p></div>
                 </div>
             </div>
         </div>
     </div>
     <br>
     {% endfor %}
+
 
     <br>
     <br>
@@ -37,21 +38,21 @@
                 <li>Pau, Sales Manager</li>
                 <li>Daniel, Marketing Director</li>
             </ul></p>
-        </div >  
+        </div >
         <div  class="d-flex justify-content-center">
             <button type="button" class="btn btn-primary-index btn-lg"><a style="color: white;" href="https://youtu.be/CmSa-4KShx8" data-fancybox>Ver Video</a></button>
         </div>
         <br>
         <br>
         <div class="InicioB" >
-        <button type="button" class="btn btn-primary-index btn-lg"><a style="color: white;" href="#inicio">Inicio</a></button> 
-        </div>   
+        <button type="button" class="btn btn-primary-index btn-lg"><a style="color: white;" href="#inicio">Inicio</a></button>
+        </div>
     </section>
     <br>
     <br>
     <br>
     <section id="presentes">
-        <h2 class="navtitles">Presentes</h2>               
+        <h2 class="navtitles">Presentes</h2>
         <div class="container bg-faded">
             <div class="row">
                 <div class="col-4 mx-auto">
@@ -61,19 +62,19 @@
                         <p class="prodtitle" id="savoring"> <b>Saboreando</b></p>
                         <p class="descrip">  Clase de cocina para ti y un amig@ o pareja. </p>
                         <p class="price"> <b>$ 44.000 CLP </b></p>
-                        <button type="submit" class="btn btn-primary btn-lg">Comprar</button> 
+                        <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
                     </div>
                 </div>
                 <div class="col-4 mx-auto">
                     <div class="card card-body mb-2">
-                        <a href="https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/SKYDIVE-PORTUGAL_D.jpg?itok=VQm2ev26" 
+                        <a href="https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/SKYDIVE-PORTUGAL_D.jpg?itok=VQm2ev26"
                             data-fancybox data-caption="&lt;b&gt;Viviendo el Presente&lt;/b&gt;&lt;br /&gt;Salto en Tandem &lt;em&gt;con&lt;/em&gt; grabación de video incluida.">
                             <img style="width: 300px; height: 200px;"  src="https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/SKYDIVE-PORTUGAL_D.jpg?itok=VQm2ev26" >
                         </a>
                         <p class="prodtitle" id="living"> <b>Viviendo el Presente</b> </p>
                         <div class="box1"><p class="descrip"> Salto en Tandem con grabación de video incluida. </p></div>
                         <p class="price"> <b>$ 220.000 CLP p/p</b></p>
-                        <button type="submit" class="btn btn-primary btn-lg" >Comprar</button> 
+                        <button type="submit" class="btn btn-primary btn-lg" >Comprar</button>
                     </div>
                 </div>
                 <div class="col-4 mx-auto">
@@ -85,8 +86,8 @@
                         <p class="prodtitle" id="enjoying"> <b>Disfrutando el Viaje</b></p>
                         <div class="box1"><p class="descrip"> Trekking grupal que incluye picnic. </p></div>
                         <p class="price"> <b>$ 22.000 CLP p/p</b></p>
-                        
-                        <button type="submit" class="btn btn-primary btn-lg">Comprar</button> 
+
+                        <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
                     </div>
                 </div>
                 <div class="col-4 mx-auto">
@@ -97,9 +98,9 @@
                         </a>
                         <p class="prodtitle" id="life"> <b>La vida es un chiste</b></p>
                         <div class="box1"><p class="descrip"> Clase intensiva de Stand Up.</p> </div>
-                        <p class="price"> <b>$ 33.000 CLP p/p</b></p>    
-                        
-                        <button type="submit" class="btn btn-primary btn-lg">Comprar</button> 
+                        <p class="price"> <b>$ 33.000 CLP p/p</b></p>
+
+                        <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -107,7 +108,7 @@
         <div>
         <br>
         <br>
-            <button type="button" class="btn btn-primary-index btn-lg"><a style="color: white" href="#inicio">Inicio</a></button> 
+            <button type="button" class="btn btn-primary-index btn-lg"><a style="color: white" href="#inicio">Inicio</a></button>
         </div>
     </section>
         <br>
@@ -119,39 +120,39 @@
                 <div class="row">
                     <div class="col-4 mx-auto">
                         <div class="card card-body mb-2">
-                            <button type="button" id= map-btn class="btn btn-primary-index btn-lg"><a style="color: white;" 
+                            <button type="button" id= map-btn class="btn btn-primary-index btn-lg"><a style="color: white;"
                                 href=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.912814896055!2d-71.53734328544697!3d-33.006073982227726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689ddcf5228e571%3A0x9417c2f3c6c4713c!2zU3RhLiBJbsOpcywgVmnDsWEgZGVsIE1hciwgVmFscGFyYcOtc28!5e0!3m2!1ses-419!2scl!4v1643227774413!5m2!1ses-419!2scl"
-                                data-fancybox data-type="iframe" data-preload="false" data-width="640" data-height="480">Ver Mapa</a></button>                        
+                                data-fancybox data-type="iframe" data-preload="false" data-width="640" data-height="480">Ver Mapa</a></button>
                             <p class="mapdescrip">Viña del Mar, CL </p>
                         </div>
                     </div>
                     <div class="col-4 mx-auto">
                         <div class="card card-body mb-2">
-                            <button type="button" id= map-btn class="btn btn-primary-index btn-lg"><a style="color: white;" 
+                            <button type="button" id= map-btn class="btn btn-primary-index btn-lg"><a style="color: white;"
                                 href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.6130767294346!2d-71.01457460020688!3d-32.28160000219394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9688f7d573227391%3A0x2bad6fb53f0b9ce!2sE-35%2C%20Hierro%20Viejo%2C%20Petorca%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1643228210145!5m2!1ses-419!2scl"
-                                data-fancybox data-type="iframe" data-preload="false" data-width="640" data-height="480">Ver Mapa</a></button>                        
+                                data-fancybox data-type="iframe" data-preload="false" data-width="640" data-height="480">Ver Mapa</a></button>
                             <p class="mapdescrip"> Petorca, CL</p>
                         </div>
                     </div>
                     <br>
                     <div class="col-4 mx-auto">
                         <div class="card card-body mb-2">
-                            <button type="button" id= map-btn class="btn btn-primary-index btn-lg"><a style="color: white;" 
+                            <button type="button" id= map-btn class="btn btn-primary-index btn-lg"><a style="color: white;"
                                 href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7357.310483059803!2d-64.23009695800624!3d-31.38728958413333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2sC%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2scl!4v1643227563718!5m2!1ses-419!2scl"
-                                data-fancybox data-type="iframe" data-preload="false" data-width="640" data-height="480">Ver Mapa</a></button>                        
+                                data-fancybox data-type="iframe" data-preload="false" data-width="640" data-height="480">Ver Mapa</a></button>
                             <p class="mapdescrip">Córdoba, Arg.</p></div>
                     </div>
                     <div class="col-4 mx-auto">
                         <div class="card card-body mb-2">
                             <button type="button" id= map-btn class="btn btn-primary-index btn-lg"><a style="color: white;" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.999914625354!2d-60.662646994939486!3d-32.95272187185613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab69208235d5%3A0x2afe76b192822f2c!2sMontevideo%2C%20S2000PZG%20Rosario%2C%20Santa%20Fe%2C%20Argentina!5e0!3m2!1ses-419!2scl!4v1643228009273!5m2!1ses-419!2scl"
-                                data-fancybox data-type="iframe" data-preload="false" data-width="640" data-height="480">Ver Mapa</a></button>                        
+                                data-fancybox data-type="iframe" data-preload="false" data-width="640" data-height="480">Ver Mapa</a></button>
                             <p class="mapdescrip">Rosario, Ar.</p>
                         </div>
                     </div>
                     <div class="col-6 mx-auto">
                         <div class="card card-body mb-2">
                             <button type="button" id= map-btn class="btn btn-primary-index btn-lg"><a style="color: white;" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1458.8108735924918!2d-0.0849311189104854!3d51.53291697410636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca324b5a02d%3A0xea3901df9638753b!2sLondres%20N1%205JJ%2C%20Reino%20Unido!5e0!3m2!1ses-419!2scl!4v1643227185985!5m2!1ses-419!2scl"
-                                data-fancybox data-type="iframe" data-preload="false" data-width="640" data-height="480">Ver Mapa</a></button>                        
+                                data-fancybox data-type="iframe" data-preload="false" data-width="640" data-height="480">Ver Mapa</a></button>
                             <h3 class="news" >¡NUEVA SUCURSAL!</h3>
                             <p class="mapdescrip"> Londres,UK</p>
                         </div>
@@ -161,7 +162,7 @@
             <br>
             <br>
         <div class="InicioB" >
-                <button type="button" class="btn btn-primary-index btn-lg"><a style="color: white" href="#inicio">Inicio</a></button> 
+                <button type="button" class="btn btn-primary-index btn-lg"><a style="color: white" href="#inicio">Inicio</a></button>
         </div>
     </section>
             <br>
@@ -183,7 +184,7 @@
         <br>
         <br>
         <div class="InicioB" >
-            <button type="button" class="btn btn-primary-index btn-lg"><a style="color: white" href="#inicio">Inicio</a></button> 
+            <button type="button" class="btn btn-primary-index btn-lg"><a style="color: white" href="#inicio">Inicio</a></button>
         </div>
         </div>
         <br>
