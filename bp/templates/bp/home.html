@@ -9,7 +9,7 @@
                     <p class="post-date"><time> published: {{post.published_date}}</time></p>
                     <p class="post-title" id="living">
                         <a href="{% url 'post_detail' pk=post.pk %}"> {{ post.title}}</a></p>
-                    <div class="box1"><p class="post"> {{post.text|linebreaksbr}}</p></div>
+                    <div class="box1"><p class= "post" class= "post-text" > {{post.text|linebreaksbr}}</p></div>
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@
             <br>
             <br>
         <div>
-            <p class="psomos">Comprando Presente (CP) es el resultado de la busqueda de un grupo de personas (Flo, Daniel, Pau y Marifer) por otorgar un servicio que ayude a conectarnos con nuestra vida y disfrutarla con cada presente/regalo que ella nos </p>
+            <p class= "paragraph" id="psomos">Comprando Presente (CP) es el resultado de la busqueda de un grupo de personas (Flo, Daniel, Pau y Marifer) por otorgar un servicio que ayude a conectarnos con nuestra vida y disfrutarla con cada presente/regalo que ella nos </p>
         </div>
         <div class="container-fluid">
             <p><ul id="team">
