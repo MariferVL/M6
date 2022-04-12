@@ -1,0 +1,13 @@
+{% extends 'bp/base.html' %}
+
+{% block content %}
+    <article class="mapdescrip" class="post">
+        {% if post.published_date %}
+            <time class="date">
+                {{ post.published_date }}
+            </time>
+        {% endif %}
+        <h2 class="navtitles">{{ post.title }}</h2>
+        <p class="psomos" >{{ post.text|linebreaksbr }}</p>
+    </article>
+{% endblock %}

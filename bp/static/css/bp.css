@@ -47,7 +47,7 @@ body { background: transparent; color: #ffffff; background-color: rgb(248, 245, 
     border-color: rgb(89, 52, 79); 
     }
 
-#psomos {background-color: white ; color:  rgb(214, 186, 115); margin-top: 0mm;
+.psomos {background-color: white ; color:  rgb(214, 186, 115); margin-top: 0mm;
     font-style: normal; font-size: 3ex; font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #team {background-color: white ; color:  rgb(214, 186, 115); font-size: 6mm;
