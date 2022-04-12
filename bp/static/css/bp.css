@@ -1,0 +1,130 @@
+body { background: transparent; color: #ffffff; background-color: rgb(248, 245, 239);    
+}
+#showcase {
+    background-image: url("https://wp.en.aleteia.org/wp-content/uploads/sites/2/2020/06/web3-girl-nature-green-sunset.jpg");
+    width: 100%; background-position: center; background-repeat: no-repeat;background-size: cover;
+    }
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&family=Pacifico&family=Raleway:ital,wght@1,500&display=swap');
+#maintitle {background-color: rgb(255, 255, 255); font-family: 'Pacifico', cursive; 
+    text-align:center; text-shadow: crimson ; color: rgb(89, 52, 79); font-size: 1.5cm 
+}
+.navbar {font-family:Arial, Helvetica, sans-serif;font-size: 22px ; text-align-last: center ;
+    background-color: rgb(89, 52, 79); color:#fff !important;
+}
+.container-fluid
+.navbar-toggler { border-color: rgb(241, 240, 217); color: rgb(241, 240, 217);}
+.navtitles{background-color:rgb(139, 191, 159); text-align:justify; text-shadow: crimson ;
+    color: rgb(255, 253, 253); font-style: oblique; font-size: 1.5cm 
+}
+.nav-link {font-family:Arial, Helvetica, sans-serif;font-size: 22px ; 
+    text-align-last: center ;background-color: rgb(89, 52, 79); color:#fff !important;
+}
+.dropdown-item {font-family:Arial, Helvetica, sans-serif;font-size: 22px ;
+    text-align-last: center ;background-color: white; color:rgb(89, 52, 79) !important;
+}
+.btn-outline-success {background-color: rgb(89, 52, 79)!important;
+    border-color: rgb(230, 181, 181) ; color: white;}
+
+.post-title {text-align: center ;margin-bottom: 0px; color:rgb(250, 79, 11);
+    margin-top: 0mm; font-weight: bold;font-size: ex; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.post { margin-left: 11%; margin-right: 11%; text-align: center ; color: rgb(214, 186, 115);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.post-date {text-align: center ; color: rgb(139, 191, 159); margin-top: 0mm;
+        font-size: 66%  ; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+#clock{ width: 50%; margin-left: 25%;}
+
+#clickbtn{ position: absolute; left: 48.5%;right: 49%;top: 98%; bottom: 98% ; }
+/* No supe como fijarlo verticalmente */
+.clocklink,.clocklink:hover  {color: white; font: bold; }
+.btn-danger { width: 33px; height: 33px;padding: 8px 0px; border-radius: 30px;
+    text-align: center; font-size: 11px; line-height: 1.42857; background-color: black;
+    border-color: black ; text-transform: none; color:white !important
+}
+.btn-danger:hover{ background-color:#59344f; cursor:pointer; 
+    border-color: rgb(89, 52, 79); 
+    }
+
+#psomos {background-color: white ; color:  rgb(214, 186, 115); margin-top: 0mm;
+    font-style: normal; font-size: 3ex; font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#team {background-color: white ; color:  rgb(214, 186, 115); font-size: 6mm;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{ margin-right: 22% ;
+    margin-left: 22% ;background-color: rgb(89, 52, 79)!important;border-color: rgb(89, 52, 79) ;
+}
+.btn-primary-index  {background-color: #59344f!important;border-color: rgb(89, 52, 79) ;
+}
+#map-btn{ margin-left: 30%; margin-right: 30%; width: 133px;}
+.prodtitle {text-align: center ;margin-bottom: 0px; color:rgb(250, 79, 11);
+    margin-top: 0mm; font-size: ex; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.descrip { margin-right: 11%; text-align: center ; color: rgb(214, 186, 115);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.price {text-align: center ; color: rgb(139, 191, 159); margin-top: 0mm;
+    font-size: ex; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.bd-highlight{ margin-right: 3% !important;padding-right: 3% !important; 
+    padding-left: 3% !important;}
+.mapdescrip { color: rgb(250, 79, 11); text-align: center ; font-style: normal;
+    font-size: 3ex; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.news {color: rgb(214, 186, 115);text-align: center ;}
+.external{ margin-left: 3% ;font-family: Arial, Helvetica, sans-serif; color: white;
+    background-color: rgb(89, 52, 79); font-size: 111%;}
+.col-4 {padding-right: 2% ; padding-left: 2% ; margin-bottom: 2%; }
+footer {text-align: center ;font-style: italic; font-size: 22px; color: rgb(236, 181, 181)}
+
+.sTitle {font-size: 33px !important;color: #753465;}
+.sFooter {font-size: 33px!important;color: #59344f; font-style: oblique;}
+.swal2-popup { width: 100%; height: 100%;}
+#swal2-html-container{font-size: 33px; }
+.swal2-confirm { width: 222px ; height: 88px; font-size: 33px !important;background-color: #59344f!important;border-color: rgb(89, 52, 79)}
+
+.bluelight {text-shadow: 0 0 10px #cf74b7, 0 0 20px #a55b91, 0 0 30px #a55b91,0 0 40px #b8489a,0 0 70px #b8489a,0 0 80px #b8489a, 0 0 100px #b8489a,0 0 150px #b8489a;
+}
+.clock { overflow: hidden; }
+    .col-md-12 {overflow: hidden; padding-bottom: 11px;
+}
+    .top-pane {
+    margin-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #59344f;
+    border: 0px;
+}
+    .bottom-pane {
+        margin-top: 0px;
+        border-radius: 0px 0px 5px 5px;
+        background-color: #59344f;
+        border: 0px;
+}
+@media (min-width: 768px) {
+    h1 { margin-bottom: 75px; font-size: 80px; font-family: 'Noto Serif', serif; font-family: 'Pacifico', cursive;
+    }
+    h2 {margin-bottom: 75px; font-size: 60px; font-family: 'Noto Serif', serif; font-family: 'Pacifico', cursive;
+    }
+}
+@media (max-width: 480px) {
+    .text { font-size: 11px;
+    }
+    h1 {padding-top: 11px;
+    }
+    h2 {padding-top: 11px;        
+    } 
+}
+@media (min-width: 768px) {
+    .num {font-size: 88px; }
+}
+@media (max-width: 767px) {
+    .num {font-size: 38px; }
+}
+@media (max-width: 480px) {
+    .num {font-size: 18px;}
+}
+@media (min-width: 768px) {
+    .text {font-size: 22px; }
+}
+@media (max-width: 767px) {
+    .text {font-size: 7px; }
+}
+
+
