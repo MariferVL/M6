@@ -58,8 +58,19 @@
             </div>
         </div>
     </nav>
-    
-    
+    <br>
+    <br>
+
+    {% for post in posts %} 
+        <article> 
+            <time> published: {{post.published_date}}</time>
+            <h2> <a href= ""> {{ post.title}}</a></h2>
+            <p> {{post.text|linebreaksbr}}</p>
+            <br>
+        </article>   
+    {% endfor %}
+    <br>
+    <br>
     <div class="clearfix">
         <img id="clock" src=https://ctl.s6img.com/society6/img/zkaHw4sEmOD61PoFnumTh41W-5o/w_1500/wall-clocks/front/natural-frame/black-hands/~artwork,fw_3502,fh_3502,iw_3500,ih_3500/s6-original-art-uploads/society6/uploads/misc/88b6a353c09f435998af91b1ec35aeb0/~~/now-motivational-quote-wall-clocks.jpg >
         <div class="clearfix" id="clickbtn"><button type="button" class="btn btn-danger btn-circle"><a  class="clocklink" href="ejercicio11.html"><i class="fa fa-heart">
