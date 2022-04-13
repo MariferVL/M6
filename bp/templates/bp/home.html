@@ -1,6 +1,11 @@
 {% extends 'bp/base.html'%}
 
 {% block content %}
+<div class="container bg-faded">
+    <a href="{% url 'post_new' %}"  class="btn btn-secondary" class="top-menu">
+        {% include './icons/file-earmark-plus.svg' %}
+    </a>
+</div>
     {% for post in posts %}
     <div class="container bg-faded">
         <div class="row">

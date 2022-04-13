@@ -1,0 +1,10 @@
+{% extends 'bp/base.html'%}
+
+{% block content %}
+    <h3 class="mapdescrip">Crea tu Post-it</h3>
+    <form method="POST" class="post-form"> {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btn btn-primary btn-lg" >Guardar</button>
+        {% comment %} <button type="submit" class="save btn btn-secondary" >Guardar</button> {% endcomment %}
+    </form>
+{% endblock %}
