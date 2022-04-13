@@ -2,9 +2,11 @@
 
 {% block content %}
 <div class="container bg-faded">
-    <a href="{% url 'post_new' %}"  class="btn btn-secondary" class="top-menu">
-        {% include './icons/file-earmark-plus.svg' %}
-    </a>
+    {% if user.is_authenticated %}
+        <a href="{% url 'post_new' %}" class="btn btn-secondary"  class="top-menu">
+            {% include './icons/file-earmark-plus.svg' %}
+        </a>
+    {% endif %}
 </div>
     {% for post in posts %}
     <div class="container bg-faded">
