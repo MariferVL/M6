@@ -1,0 +1,22 @@
+{% extends "bp/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Registrarme" %}{% endblock %}
+
+{% block content %}
+<h1>{% trans "Sign Up" %}</h1>
+
+<p>Ya tienes una cuenta? Entonces ingresa<a href="{% url 'login' %}">aquí.</a>.</p>
+
+<form class="signup" id="signup_form" method="post" action="{% url 'signup' %}">
+  {% csrf_token %}
+  {{ form.as_p }}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  <button type="submit">{% trans "Registrarme" %} &raquo;</button>
+</form>
+
+{% endblock %}
+

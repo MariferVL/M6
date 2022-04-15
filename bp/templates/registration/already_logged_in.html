@@ -1,0 +1,4 @@
+{% load i18n %}
+
+{% user_display user as user_display %}
+<p><strong>{% trans "Note" %}:</strong> {% blocktrans %}ya has ingresado como {{ user_display }}.{% endblocktrans %}</p>

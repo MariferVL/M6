@@ -1,0 +1,12 @@
+{% extends "bp/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Verifica tu dirección de email" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Verifica tu dirección de email" %}</h1>
+
+    <p>{% blocktrans %}Hemos enviado un email de verificación. Sigue el link incluido en el email para finalizar el proceso de tu registro. Si no ves el email de verificación en tu Bandeja de Entrada, revisa en tu carpeta de Spam. Contáctanos si no recibes nuestro email de verficación en los próximos minutos.{% endblocktrans %}</p>
+
+{% endblock %}
