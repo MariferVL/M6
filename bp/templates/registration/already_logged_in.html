@@ -1,4 +1,8 @@
+{% extends "bp/base.html" %}
+
 {% load i18n %}
+
+<title>{% block title %}Ingresado-Comprando Presentes{% endblock %}</title>
 
 {% user_display user as user_display %}
 <p><strong>{% trans "Note" %}:</strong> {% blocktrans %}ya has ingresado como {{ user_display }}.{% endblocktrans %}</p>

@@ -1,5 +1,8 @@
 {% extends 'bp/base.html'%}
 
+<title>{% block title %}Edición Post-It - Comprando Presentes{% endblock %}</title>
+
+
 {% block content %}
     <h3 class="mapdescrip">Crea tu Post-it</h3>
     <form method="POST" class="post-form"> {% csrf_token %}

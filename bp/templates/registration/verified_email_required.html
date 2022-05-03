@@ -2,10 +2,10 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Verifica tu dirección de email" %}{% endblock %}
+<title>{% block title %}Verifica identidad-Comprando Presentes{% endblock %}</title>
 
 {% block content %}
-<h1>{% trans "Verifica tu dirección de email" %}</h1>
+<h1>{% trans "Verifica tu identidad" %}</h1>
 
 {% url 'account_email' as email_url %}
 

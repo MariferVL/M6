@@ -27,6 +27,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+CORS_ORIGIN_ALLOW_ALL = True
+
+
+""" # Saffer
+CORS_ORIGIN_ALLOW_ALL = False
+
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:5000',
+) """
+
+
+
 
 # Application definition
 
@@ -39,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bp',
     'accounts',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +62,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 
 ]
 
@@ -108,7 +122,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es-cl'
 
-TIME_ZONE = 'America/Santiago'
+TIME_ZONE = 'America/Santiago' 
 
 USE_I18N = True
 

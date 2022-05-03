@@ -1,0 +1,229 @@
+{% extends 'bp/base.html'%}
+{% load static %}
+
+<title>{% block title %}ABP-Comprando Presentes{% endblock %}</title>
+
+{% block content %}
+
+    <!-- ABP Galery Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Bootcamp <br>Full Stack Python Trainee</h5>
+                <h1 class="mb-0">Actividades realizadas de los Aprendizajes Esperados Módulo 6.</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <div class="thumbex">
+                            <div class="thumbnail"><a href="javascript:void(0)"> 
+                                <img class="testimonial-img" src= {% static 'images\installDjango.png' %}/> 
+                                <span class="testimonial-span">ABP 1</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <br>Desarrollo:
+                        <br><i class="fa fa-check text-primary me-3"></i>Cree un entorno virtual con python.
+                        <br><i class="fa fa-check text-primary me-3"></i>En él instale la última versión estable de Django.
+                        <br><i class="fa fa-check text-primary me-3"></i>Verifique ambas versiones con los comandos respectivos.
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <div class="thumbex">
+                            <div class="thumbnail"><a href="javascript:void(0)"> 
+                                <img class="testimonial-img" src="https://bit.ly/2vnI5ZM"/>
+                                <span class="testimonial-span">ABP 1</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <br>Desarrollo:
+                        <br><i class="fa fa-check text-primary me-3"></i>Levante un servidor utilizando Python. 
+                        <br><i class="fa fa-check text-primary me-3"></i>Muestre mensaje que indique <b>“Servidor levantado mediante http.server”</b>.
+                        <br><i class="fa fa-check text-primary me-3"></i>Crear un proyecto en Django.
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <div class="thumbex">
+                            <div class="thumbnail"><a href="javascript:void(0)"> 
+                                <img class="testimonial-img" src= {% static 'images/landing.png' %} />
+                                <span class="testimonial-span">ABP 2</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <br>Desarrollo:
+                        <br><i class="fa fa-check text-primary me-3"></i>Crear una aplicación de Django.
+                        <br><i class="fa fa-check text-primary me-3"></i>Levante un landing page simple para su aplicación.  
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <div class="thumbex">
+                            <div class="thumbnail"><a href="javascript:void(0)"> 
+                                <img class="testimonial-img" src={% static 'images/createUsers.png' %} />
+                                <span class="testimonial-span">ABP 3</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <br>Desarrollo:
+                        <br><i class="fa fa-check text-primary me-3"></i>Elaboren nueva página que muestre info de los usuarios 
+                        registrados en su aplicación.  
+                        <br><i class="fa fa-check text-primary me-3"></i>Registre al menos 5 usuarios, mediante la sección admin de django. 
+                        <br><i class="fa fa-check text-primary me-3"></i>Cada usuario debe tener al menos 3 atributos.
+                    </div>                     
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <div class="thumbex">
+                            <div class="thumbnail"><a href="javascript:void(0)"> 
+                                <img class="testimonial-img" src= {% static 'images/baseEx.png' %} />
+                                <span class="testimonial-span">ABP 3</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <br>Desarrollo:
+                        <br><i class="fa fa-check text-primary me-3"></i>Incorporar 2 imágenes a su página principal.
+                        <br><i class="fa fa-check text-primary me-3"></i>Incorpore elementos de bootstrap a su página principal. 
+                        <br><i class="fa fa-check text-primary me-3"></i>Elementos como el footer y el navbar deben compartirse entre las diferentes páginas. 
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <div class="thumbex">
+                            <div class="thumbnail"><a href="javascript:void(0)"> 
+                                <img class="testimonial-img" src={% static 'images/signUpCode.png' %}/>
+                                <span class="testimonial-span">ABP 4</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <br>Desarrollo:
+                        <br><i class="fa fa-check text-primary me-3"></i>Elabore una nueva página con un formulario que guarde 
+                        información de los usuarios de su aplicación. 
+                        <br><i class="fa fa-check text-primary me-3"></i>Elabora toda la estructura necesaria para crear usuarios 
+                        mediante un formulario en la web.
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <div class="thumbex">
+                            <div class="thumbnail"><a href="javascript:void(0)"> 
+                                <img class="testimonial-img" src= {% static 'images/signUpPage.png' %} />
+                                <span class="testimonial-span">ABP 4</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <br>Desarrollo:
+                        <br><i class="fa fa-check text-primary me-3"></i>La nueva página debe tener componentes de CSS. 
+                        <br><i class="fa fa-check text-primary me-3"></i>Debe incluir la imagen de un logo tentativo de su aplicación.
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <div class="thumbex">
+                            <div class="thumbnail"><a href="javascript:void(0)"> 
+                                <img class="testimonial-img" src={% static 'images/loginEx.png' %}/>
+                                <span class="testimonial-span">ABP 5</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <br>Desarrollo:
+                        <br><i class="fa fa-check text-primary me-3"></i>Desarrolle la funcionalidad de <b>login/logout</b> en su página web.                       
+                        <br><i class="fa fa-check text-primary me-3"></i>Desarrolle un template para el login.
+                        <br><i class="fa fa-check text-primary me-3"></i>Desarrolle un template post login. Debe indicar el nombre del usuario formateado en un mensaje de bienvenida.
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <div class="thumbex">
+                            <div class="thumbnail"><a href="javascript:void(0)"> 
+                                <img class="testimonial-img" src={% static 'images/restrictions.png' %}/>
+                                <span class="testimonial-span">ABP 5</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <br>Desarrollo:
+                        <br><i class="fa fa-check text-primary me-3"></i>Realice al menos 2 tipos de restricciones de acceso.
+                        <br><i class="fa fa-check text-primary me-3"></i>Describir en README el funcionamiento de su app de forma detallada, su objetivo y toda la información que considere relevante. 
+                        <br><i class="fa fa-check text-primary me-3"></i>Personalice los aspectos que considere necesarios del Login.
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <div class="thumbex">
+                            <div class="thumbnail"><a href="javascript:void(0)"> 
+                                <img class="testimonial-img" src={% static 'images/createGroups.png' %}/>
+                                <span class="testimonial-span">ABP 6</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <br>Desarrollo:
+                        <br><i class="fa fa-check text-primary me-3"></i>Identifique 2 grupos de usuarios de su aplicación con permisos diferenciados
+                        <br><i class="fa fa-check text-primary me-3"></i>Justifique los permisos diferenciados en un archivo README.txt.
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <div class="thumbex">
+                            <div class="thumbnail"><a href="javascript:void(0)"> 
+                                <img class="testimonial-img" src={% static 'images/shellUsers.png' %}/>
+                                <span class="testimonial-span">ABP 6</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <br>Desarrollo:
+                        <br><i class="fa fa-check text-primary me-3"></i>Cree 2 usuarios por grupo.
+                        <br><i class="fa fa-check text-primary me-3"></i>Verifique que los usuarios quedan registrados en la página de administración de Django.
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <div class="thumbex">
+                            <div class="thumbnail"><a href="javascript:void(0)"> 
+                                {% comment %} <img class="testimonial-img" src={% static 'images/shellUsers.png' %}/> {% endcomment %}
+                                <span class="testimonial-span">Sprint</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <br>Desarrollo:
+                        <br><i class="fa fa-check text-primary me-3"></i>Tener levantados al menos 2 templates.
+                        <br><i class="fa fa-check text-primary me-3"></i>Manejar los archivos estáticos y asociarlos a los templates para que se carguen y sean visibles.                        <br><i class="fa fa-check text-primary me-3"></i>Tener un formulario levantado mediante las funcionalidades que nos entrega Django.
+                        <br><i class="fa fa-check text-primary me-3"></i>Cada usuario al registrarse debe seleccionar el grupo al que pertenece.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABP Galery End -->
+
+    <!-- ABP Files Start-->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-4 ml-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Documentación:</h5>
+            </div>
+            <div class="link-animated d-flex flex-column justify-content-start" data="0.6s">
+                <a class="text-light mb-2" style="margin-left: 300px; color: rgb(60, 17, 95) !important;" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1AN-n1ealIY4PceQViBzN43Ab5FNZ1ieAFD626WX26WA/edit?usp=sharing">
+                    <i class="bi bi-arrow-right text-primary me-2"></i>Investigación ABP1</a>
+                <a class="text-light mb-2" style="margin-left: 300px; color: rgb(60, 17, 95) !important;" href="{% url 'usersInfo' %}">
+                    <i class="bi bi-arrow-right text-primary me-2"></i>Información Usuarios</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABP Files End-->
+
+{% endblock %}
+

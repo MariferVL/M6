@@ -1,0 +1,49 @@
+{% extends 'bp/base.html'%}
+
+{% block content %}
+
+    {% for user in users %}
+    <div class="container bg-faded">
+        <div class="row">
+            <div class="col-4 mx-auto">
+                <p class="postdate"> Usuario: {{user.username}}</p>
+                <p class="postdate"> Nombre: {{user.first_name }}</p>
+                <p class="postdate"> Apellido: {{user.last_name }}</p>
+                <p class="postdate"> email: {{user.email}}</p>                               
+            </div>
+        </div>
+    </div>
+    <br>
+    {% endfor %}
+
+{% endblock %}
+
+
+{% comment %} 
+
+Crear una carpeta dentro de Templates con el nombre de la app correspondiente, y allí: 
+        + Poner todas las templates excepto las de registro.
+        + Agregar este archivo. 
+            + Poner style/sabor a gusto.
+
+En views.py de la App agregar:
+
+    from django.contrib.auth.models import User
+
+        def usersInfo(request):
+            users = User.objects.all()
+            return render(request, 'bp/users_info.html', {'users': users})
+
+En urls.py de la App agregar:
+
+    from django.urls import path
+    from . import views
+
+        path('usersInfo', views.usersInfo, name='usersInfo'),
+
+Para linkearlo a alguna parte:
+
+    href="{% url 'usersInfo' %} 
+    
+    
+{% endcomment %}

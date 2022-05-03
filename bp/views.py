@@ -1,14 +1,21 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from  django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from django.utils import timezone
 from .models import Post
 from .forms import PostForm
 
-# Create your views here.
+# Create your views here. 
 
 def home(request):
+    return render(request, 'bp/home.html', {'home': home})
+
+""" def search(request):
+    return render(request, 'bp/search.html', {'search': search}) """
+
+def postIt(request):
     posts = Post.objects.order_by('published_date')
-    return render(request, 'bp/home.html', {'posts': posts})
+    return render(request, 'bp/post-it.html', {'posts': posts})
 
 def post_detail(request,pk):
     post = get_object_or_404(Post, pk=pk)
@@ -43,3 +50,12 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'bp/post_edit.html', {'form': form})
+
+def usersInfo(request):
+    users = User.objects.all()
+    return render(request, 'bp/users_info.html', {'users': users})
+
+def abp(request):
+    return render(request, 'bp/abp.html', {'abp': abp})
+
+
