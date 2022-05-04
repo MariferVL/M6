@@ -7,7 +7,7 @@
 
 <h1 align="center"><b>Proyecto Django</b></h1>
 <h2 align="center">Módulo 6</h2>
-<img src="/bp/static/images/LOGO.png" alt="Logo" width="330px" height="50%">
+<img src="/bp/static/images/favicon-96x96.png" alt="Logo" width="110px" height="110px">
 
 
 
@@ -140,11 +140,7 @@ El proyecto cuenta con 3 secciones principales que son de libre accceso al públ
 * [Real Python](https://realpython.com/)
 
 
+
+
 <p align="left"><a href="#volver">Volver</a></p>
 
-
-#Mi filosofía de vida:
-        # Siempre nada es personal
-        # Solo ves en mi lo que crees de ti.
-        # Solo juzgas en mi aquello que existe en ti.
-        # No puedes ver lo que no está en ti.
