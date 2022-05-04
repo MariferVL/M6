@@ -91,8 +91,8 @@
                         <img src={% static 'images/sesion.jpg' %} alt="user" width="32" height="32" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu text-small profile" aria-labelledby="dropdownUser1">
-                        <li><a class="dropdown-item" href="/#">Perfil</a></li>
-                        <li><a class="dropdown-item" href="/#">Configuración</a></li>
+                        <li><a class="dropdown-item" href={% url 'profile' %}>Perfil</a></li>
+                        <li><a class="dropdown-item" href={% url 'config' %}>Configuración</a></li>
                         <li><a class="dropdown-item" href={% url 'post-it' %}>A Postear!</a></li>
                         <li>
                             <hr class="dropdown-divider">
@@ -148,7 +148,7 @@
                                 <a class="text-light mb-2" href={% url 'home' %}><i class="bi bi-arrow-right text-primary me-2"></i>Inicio</a>
                                 <a class="text-light mb-2" href="/#team"><i class="bi bi-arrow-right text-primary me-2"></i>Conócenos</a>
                                 <a class="text-light mb-2" href="/#presents"><i class="bi bi-arrow-right text-primary me-2"></i>Nuestros Servicios</a>
-                                <a class="text-light mb-2" href={% url 'post-it' %}><i class="bi bi-arrow-right text-primary me-2"></i>Post-it Tree</a>
+                                <a class="text-light mb-2" href={% url 'post-it' %}><i class="bi bi-arrow-right text-primary me-2"></i>Muro Post-it</a>
                                 <a class="text-light" href="/#contact"><i class="bi bi-arrow-right text-primary me-2"></i>Contáctanos</a>
                             </div>
                         </div>

@@ -479,13 +479,34 @@ h6,
 .sticky-container {
     max-width: 440px;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.wall {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    border-color: none;
+}
+
+.sticky-container-wall {
+    height: 22% !important;
+    width: 22% !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    max-width: 440px;
+    position: relative;
 }
 
 .sticky-outer {
     display: flex;
     padding-top: 92.5925926%;
     position: relative;
-
     width: 100%;
 }
 
@@ -509,20 +530,31 @@ h6,
 }
 
 .sticky-content {
+    color: #601394;
+    background: linear-gradient(180deg,
+            rgb(255, 187, 244, 1) 0%,
+            rgb(255, 187, 244, 1) 12%,
+            rgba(238, 172, 230, 1) 75%,
+            rgba(242, 181, 233, 1) 100%);
+}
+
+.color {
     background: linear-gradient(180deg,
             rgba(187, 235, 255, 1) 0%,
             rgba(187, 235, 255, 1) 12%,
             rgba(170, 220, 241, 1) 75%,
             rgba(195, 229, 244, 1) 100%);
+}
+
+.sticky-content {
     width: 100%;
     height: 100%;
-
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     font-family: 'Kalam', cursive;
     font-size: 111px;
-
     clip-path: url(#stickyClip);
 }
 
