@@ -10,9 +10,6 @@ from .forms import PostForm
 def home(request):
     return render(request, 'bp/home.html', {'home': home})
 
-""" def search(request):
-    return render(request, 'bp/search.html', {'search': search}) """
-
 def postIt(request):
     posts = Post.objects.order_by('published_date')
     return render(request, 'bp/post-it.html', {'posts': posts})

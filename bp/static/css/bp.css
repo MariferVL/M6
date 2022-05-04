@@ -20,9 +20,11 @@
     0% {
         -webkit-transform: perspective(120px)
     }
+
     50% {
         -webkit-transform: perspective(120px) rotateY(180deg)
     }
+
     100% {
         -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
     }
@@ -33,10 +35,12 @@
         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
         -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
     }
+
     50% {
         transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
         -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
     }
+
     100% {
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
@@ -83,24 +87,24 @@ h6,
     transition: .5s;
 }
 
-.btn-log{
+.btn-log {
     color: #601394;
     font-weight: 600;
     transition: .5s;
     padding-left: 22px;
     box-sizing: border-box;
-} 
+}
 
-.btn-log:hover{
+.btn-log:hover {
     box-shadow: inset 0 0 0 0 var(--primary);
     color: var(--secondary);
 }
 
 .send {
-    color: rgba(38, 9, 62, 0.781) !important;
+    color: white !important;
     font-weight: bold;
-    border-color: rgba(218, 193, 238, 0.938) !important;
-    background-color:  white !important;
+    border-color: #7d1bbe !important;
+    background-color: #7d1bbe !important;
     box-shadow: inset 0 0 0 50px transparent;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
@@ -116,11 +120,12 @@ h6,
     box-shadow: inset 0 0 0 50px transparent;
 }
 
-.slideInLeft{
+.slideInLeft {
     box-shadow: inset 0 0 0 50px transparent;
 }
 
-.btn-primary:hover, .me-3:hover {
+.btn-primary:hover,
+.me-3:hover {
     box-shadow: inset 0 0 0 0 var(--primary);
 }
 
@@ -165,9 +170,11 @@ h6,
 }
 
 .profile.show {
-    right: 10px; 
-    left:  auto; /* remove the left position so it won't use the full screen*/
-    top:   auto; /* remove the position 100% */
+    right: 10px;
+    left: auto;
+    /* remove the left position so it won't use the full screen*/
+    top: auto;
+    /* remove the position 100% */
 }
 
 .sticky-top.navbar-dark .navbar-nav .nav-link {
@@ -216,7 +223,7 @@ h6,
         border-bottom: 1px solid rgba(256, 256, 256, 0.1);
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-dark {
         position: fixed;
         background: #FFFFFF;
@@ -258,7 +265,7 @@ h6,
     z-index: 1;
 }
 
-.clock{
+.clock {
     padding-top: 422px !important;
     padding-bottom: 111px !important;
     background: rgba(120, 75, 179, 0.444)
@@ -317,15 +324,48 @@ h6,
 }
 
 @-webkit-keyframes section-title-run {
-    0% {left: 0; } 50% { left : 145px; } 100% { left: 0; }
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 145px;
+    }
+
+    100% {
+        left: 0;
+    }
 }
 
 @-webkit-keyframes section-title-run-center {
-    0% { left: 50%; margin-left: -75px; } 50% { left : 50%; margin-left: 45px; } 100% { left: 50%; margin-left: -75px; }
+    0% {
+        left: 50%;
+        margin-left: -75px;
+    }
+
+    50% {
+        left: 50%;
+        margin-left: 45px;
+    }
+
+    100% {
+        left: 50%;
+        margin-left: -75px;
+    }
 }
 
 @-webkit-keyframes section-title-run-sm {
-    0% {left: 0; } 50% { left : 85px; } 100% { left: 0; }
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 85px;
+    }
+
+    100% {
+        left: 0;
+    }
 }
 
 /* We're & Team */
@@ -343,29 +383,30 @@ h6,
 
 .person:hover {
     border-color: #f1f1f1;
-}    
+}
 
-/* Presents/Services */ 
+/* Presents/Services */
 .services-item .services-img img,
-.map img  {
+.map img {
     transition: .5s;
 }
 
 .services-item:hover .services-img img,
-.map img  {
+.map img {
     transform: scale(1.15);
 }
 
-/* Find us */ 
+/* Find us */
 .section-icon {
     margin-top: 6rem !important;
     margin-right: auto !important;
     margin-left: auto !important;
     position: relative !important;
 }
+
 .map-icon {
-    height: 44px; 
-    width: 66px; 
+    height: 44px;
+    width: 66px;
     text-align: center !important;
 }
 
@@ -407,13 +448,13 @@ h6,
     box-shadow: 0 0 30px #DDDDDD;
 }
 
-.testimonial-span{
+.testimonial-span {
     position: absolute;
     z-index: 2;
     top: calc(150px - 20px);
     left: 0;
     right: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     padding: 10px 50px;
     margin: 0 45px;
     text-align: center;
@@ -424,15 +465,99 @@ h6,
     transition: all 0.3s ease-out;
 }
 
-.testimonial-span:hover{
+.testimonial-span:hover {
     opacity: 0;
 }
 
-.testimonial-img:hover{
+.testimonial-img:hover {
     backface-visibility: hidden;
     transform: scale(3, 3);
     opacity: 1;
-}    
+}
+
+/* Post-it Wall */
+.sticky-container {
+    max-width: 440px;
+    position: relative;
+}
+
+.sticky-outer {
+    display: flex;
+    padding-top: 92.5925926%;
+    position: relative;
+
+    width: 100%;
+}
+
+.sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.sticky:before {
+    box-shadow: -2px 2px 15px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.25);
+    content: '';
+    width: 90%;
+    left: 5px;
+    height: 83%;
+    position: absolute;
+    top: 30%;
+}
+
+.sticky-content {
+    background: linear-gradient(180deg,
+            rgba(187, 235, 255, 1) 0%,
+            rgba(187, 235, 255, 1) 12%,
+            rgba(170, 220, 241, 1) 75%,
+            rgba(195, 229, 244, 1) 100%);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kalam', cursive;
+    font-size: 111px;
+
+    clip-path: url(#stickyClip);
+}
+
+@media screen and (min-width: 640px) {
+    .sticky:before {
+        height: 79%;
+        width: 90%;
+    }
+
+    .sticky-content {
+        font-size: 111px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sticky:before {
+        height: 75%;
+        width: 90%;
+    }
+
+    .sticky-content {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sticky:before {
+        height: 73%;
+        width: 90%;
+    }
+
+    .sticky-content {
+        font-size: 1.875rem;
+    }
+}
 
 /* Miscellaneous */
 @media (min-width: 991.98px) {
